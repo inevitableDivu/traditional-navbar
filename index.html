@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+
+<body>
+    <nav class="bg-indigo-600 py-2">
+        <!-- FOR MOBILE SCREEN -->
+        <div class="relative md:hidden">
+            <div class="cursor-pointer select-none w-fit px-5" id="menu-button">
+                <span class="material-symbols-outlined cursor-pointer select-none">
+                    menu
+                </span>
+            </div>
+            <ul class="relative px-2 transition-all duration-500 overflow-hidden navmenulist" id="nav-items-list">
+                <li class="nav-menu-item">
+                    <div>Home</div>
+                </li>
+                <li class="nav-menu-item">
+                    <div id="function-button">Function</div>
+                    <ul id="function-menu-container" class="absolute transition-all top-0 duration-300 px-2 w-full">
+                        <li class="nav-menu-item">
+                            <div>Function 1</div>
+                        </li>
+                        <li class="nav-menu-item">
+                            <div>Function 2</div>
+                        </li>
+                        <li class="nav-menu-item">
+                            <div>Function 3</div>
+                        </li>
+                        <li class="nav-menu-item">
+                            <div>Function 4</div>
+                        </li>
+                        <li class="nav-menu-item">
+                            <div>Function 5</div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-menu-item">
+                    <div>About</div>
+                </li>
+                <li class="nav-menu-item">
+                    <div>Services</div>
+                </li>
+                <li class="nav-menu-item">
+                    <div>Contact</div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- FOR DESKTOP SCREEN -->
+        <div class="container px-10 text-white hidden md:block">
+            <ul class="flex gap-10 items-center" id="nav-menu-list-desktop">
+                <li>
+                    <div class="nav-item-desktop active">Home</div>
+                </li>
+                <li>
+                    <div class="nav-item-desktop">Function</div>
+                </li>
+                <li>
+                    <div class="nav-item-desktop">About</div>
+                </li>
+                <li>
+                    <div class="nav-item-desktop">Services</div>
+                </li>
+                <li>
+                    <div class="nav-item-desktop">Contact</div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <script src="/index.js"></script>
+</body>
+
+</html>
